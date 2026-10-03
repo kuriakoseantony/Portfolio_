@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; media-src 'none'; object-src 'none'; manifest-src 'none'; base-uri 'none'; form-action 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#000000">
+<title>Kuriakose Antony — MERN &amp; Django Developer Portfolio</title>
+<meta name="description" content="Portfolio of Kuriakose Antony, an MCA student at Mar Athanasios College for Advanced Studies (MACFAST), Tiruvalla, from Alappuzha, Kerala. After completing my BCA I focused on full-stack web development, where I enjoy taking a real-world need and turning it into a complete application, from what people see on screen to how it works behind the scenes. I care about building software that is clear, reliable and easy to use, and I'm always learning to get better at it. I'm currently looking for internships and full-time jobs where I can contribute, learn from experienced teams and grow as a developer.">
+<meta name="author" content="Kuriakose Antony">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kuriakose Antony — Full-Stack Developer Portfolio">
+<meta property="og:description" content="MCA student at Mar Athanasios College for Advanced Studies (MACFAST), Tiruvalla, from Alappuzha, Kerala. After completing my BCA I focused on full-stack web development, where I enjoy taking a real-world need and turning it into a complete application, from what people see on screen to how it works behind the scenes. I care about building software that is clear, reliable and easy to use, and I'm always learning to get better at it. I'm currently looking for internships and full-time jobs where I can contribute, learn from experienced teams and grow as a developer.">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="icons.css">
+<script src="data.js" defer></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="topnav" aria-label="Primary">
+  <div class="topnav-inner" id="navInner">
+    <a href="#home" class="nav-tab active" data-sec="home" aria-current="true">Home</a>
+    <a href="#skills" class="nav-tab" data-sec="skills">Skills</a>
+    <a href="#projects" class="nav-tab" data-sec="projects">Projects</a>
+    <a href="#education" class="nav-tab" data-sec="education">Education</a>
+    <a href="#certs" class="nav-tab" data-sec="certs">Certs</a>
+    <a href="#contact" class="nav-tab" data-sec="contact">Contact</a>
+  </div>
+</nav>
+
+<main class="feed" id="main">
+
+  <noscript>
+    <div class="noscript-note">
+      This portfolio builds its sections with JavaScript, which is turned off in your browser.
+      You can still reach me at <a href="mailto:kuriakoseantony16@gmail.com">kuriakoseantony16@gmail.com</a>,
+      on <a href="https://linkedin.com/in/kuriakose-antony-8ba367282" rel="noopener noreferrer">LinkedIn</a>,
+      or <a href="Kuriakose_Antony_Resume.pdf" download>download my resume</a>.
+    </div>
+  </noscript>
+
+  <!-- HOME / PROFILE -->
+  <section id="home" aria-label="Introduction">
+    <div class="profile-block">
+      <div class="hero-flex">
+        <div class="hero-text">
+          <div class="greeting">Hello, I'm</div>
+          <h1 class="hero-name">Kuriakose Antony</h1>
+          <p class="bio">MCA student at Mar Athanasios College for Advanced Studies (MACFAST), Tiruvalla, from Alappuzha, Kerala. After completing my BCA I focused on full-stack web development, where I enjoy taking a real-world need and turning it into a complete application, from what people see on screen to how it works behind the scenes. I care about building software that is clear, reliable and easy to use, and I'm always learning to get better at it. I'm currently looking for internships and full-time jobs where I can contribute, learn from experienced teams and grow as a developer."></p>
+          <div class="meta-row">
+            <span><span aria-hidden="true">📍</span> Edathua, Alappuzha, Kerala, India</span>
+            <span><span aria-hidden="true">🎓</span> MCA @ MACFAST, Tiruvalla</span>
+            <span><span aria-hidden="true">💼</span> Open to opportunities</span>
+          </div>
+          <div class="stats-row">
+            <span><b id="statProjects">3</b> <span class="lbl">Projects</span></span>
+            <span><b id="statCerts">6</b> <span class="lbl">Certifications</span></span>
+            <span><b id="statTech">20</b> <span class="lbl">Technologies</span></span>
+          </div>
+          <div class="hero-actions">
+            <a class="resume-btn" href="Kuriakose_Antony_Resume.pdf" download="Kuriakose_Antony_Resume.pdf">
+              <span aria-hidden="true">⬇</span> Download Resume (PDF)
+            </a>
+            <a class="resume-btn outline" href="https://linkedin.com/in/kuriakose-antony-8ba367282" target="_blank" rel="noopener noreferrer">
+              <i class="devicon-linkedin-plain" aria-hidden="true"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+        <div class="hero-avatar-wrap">
+          <div class="avatar-big" id="avatarWrap">
+            <img src="profile.jpg" alt="Portrait of Kuriakose Antony" id="profileImg" width="640" height="825" decoding="async" fetchpriority="high">
+            <span id="avatarFallback" aria-hidden="true">KA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS (rendered by script.js from data.js) -->
+  <section id="skills" aria-label="Skills">
+    <div class="sec-header">Skills <span class="count" id="skillsCount"></span></div>
+    <div class="skills-wrap">
+      <div class="cat-btn-row" id="catBtnRow"></div>
+      <div id="skillGroups"></div>
+    </div>
+    <!-- decorative only: the same skills are listed above as real text -->
+    <div class="marquee-outer" aria-hidden="true">
+      <div class="marquee-row left" id="marqueeLeft"></div>
+      <div class="marquee-row right" id="marqueeRight"></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS (rendered by script.js from data.js) -->
+  <section id="projects" aria-label="Projects">
+    <div class="sec-header">Projects <span class="count" id="projectsCount"></span></div>
+    <div id="projectsWrap"></div>
+  </section>
+
+  <!-- EDUCATION (rendered by script.js from data.js) -->
+  <section id="education" aria-label="Education">
+    <div class="sec-header">Education</div>
+    <div class="timeline" id="educationWrap"></div>
+  </section>
+
+  <!-- CERTS (rendered by script.js from data.js) -->
+  <section id="certs" aria-label="Certifications and training">
+    <div class="sec-header">Certifications &amp; Training</div>
+    <div id="certsWrap"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" aria-label="Contact">
+    <div class="sec-header">Contact</div>
+    <div class="contact-wrap">
+      <div class="contact-links">
+        <a class="contact-link" href="Kuriakose_Antony_Resume.pdf" download="Kuriakose_Antony_Resume.pdf"><span class="ic" aria-hidden="true">📄</span> Download Resume (PDF)</a>
+        <a class="contact-link" href="https://linkedin.com/in/kuriakose-antony-8ba367282" target="_blank" rel="noopener noreferrer"><i class="devicon-linkedin-plain ic" aria-hidden="true"></i> linkedin.com/in/kuriakose-antony-8ba367282</a>
+        <a class="contact-link" href="mailto:kuriakoseantony16@gmail.com"><span class="ic" aria-hidden="true">✉️</span> kuriakoseantony16@gmail.com</a>
+        <a class="contact-link" href="tel:+917025150101"><span class="ic" aria-hidden="true">📞</span> +91 70251 50101</a>
+        <span class="contact-link static"><span class="ic" aria-hidden="true">📍</span> Edathua, Alappuzha, Kerala, India</span>
+      </div>
+
+      <form id="contactForm" aria-label="Send me a message">
+        <div class="form-group">
+          <label for="fname">Your name</label>
+          <input type="text" id="fname" name="fname" required maxlength="100" autocomplete="name" placeholder="Full name">
+        </div>
+        <div class="form-group">
+          <label for="femail">Your email</label>
+          <input type="email" id="femail" name="femail" required maxlength="254" autocomplete="email" placeholder="you@example.com">
+        </div>
+        <div class="form-group">
+          <label for="fsubject">Subject</label>
+          <input type="text" id="fsubject" name="fsubject" required maxlength="150" placeholder="What's this about?">
+        </div>
+        <div class="form-group">
+          <label for="fmessage">Message</label>
+          <textarea id="fmessage" name="fmessage" rows="5" required maxlength="2000" placeholder="Write your message..."></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send message</button>
+      </form>
+      <p class="form-note">Submitting opens your email app with everything pre-filled — nothing is sent from this page.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>Built by Kuriakose Antony <span class="heart" aria-hidden="true">♥</span> 2026</footer>
+
+<!-- CERTIFICATE IMAGE MODAL -->
+<div class="cert-modal" id="certModal" role="dialog" aria-modal="true" aria-labelledby="certModalTitle">
+  <div class="cert-modal-backdrop" id="certModalBackdrop"></div>
+  <div class="cert-modal-content">
+    <button type="button" class="cert-modal-close" id="certModalClose" aria-label="Close certificate">✕</button>
+    <div class="cert-modal-title" id="certModalTitle"></div>
+    <img class="cert-modal-img" id="certModalImg" alt="">
+    <div class="cert-modal-empty" id="certModalEmpty">No certificate image added yet.</div>
+  </div>
+</div>
+
+</body>
+</html>
